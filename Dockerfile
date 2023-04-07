@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy JAR file and its dependencies
-COPY target/sleuth-0.0.1-SNAPSHOT.jar /app
+COPY target/sleuth-0.0.2-SNAPSHOT.jar /app
 
 # Set entrypoint
 ENTRYPOINT ["java", "-jar", "/app/sleuth-0.0.2-SNAPSHOT.jar"]
